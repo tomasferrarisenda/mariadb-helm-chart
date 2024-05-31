@@ -1,8 +1,13 @@
-# replica:
-#   replicaCount: 1
-
-# auth:
-#   enabled: false
+primary:
+  extraEnvVars:
+    - name: MYSQL_ROOT_PASSWORD
+      value: api
+    - name: MYSQL_DATABASE
+      value: apiDB
+    - name: MYSQL_USER
+      value: api
+    - name: MYSQL_PASSWORD
+      value: api
 
   #       env:
   #       - name: MYSQL_ROOT_PASSWORD
