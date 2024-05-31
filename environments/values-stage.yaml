@@ -1,5 +1,10 @@
-replica:
-  replicaCount: 1
+environment: stage
 
-auth:
-  enabled: false
+deployment:
+  image:  
+    tag: latest
+  replicas: 1
+
+  labels:
+    environment: stage
+    app: exercise-api-gradle-service-stage

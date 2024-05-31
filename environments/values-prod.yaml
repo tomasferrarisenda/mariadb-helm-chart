@@ -1,5 +1,10 @@
-replica:
-  replicaCount: 1
+environment: prod
 
-auth:
-  enabled: false
+deployment:
+  image:  
+    tag: latest
+  replicas: 1
+
+  labels:
+    environment: prod
+    app: exercise-api-gradle-service-prod

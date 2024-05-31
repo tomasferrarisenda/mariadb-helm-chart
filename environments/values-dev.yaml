@@ -1,28 +1,10 @@
-primary:
-  extraEnvVars:
-    - name: MYSQL_ROOT_PASSWORD
-      value: api
-    - name: MYSQL_DATABASE
-      value: apiDB
-    - name: MYSQL_USER
-      value: api
-    - name: MYSQL_PASSWORD
-      value: api
+environment: dev
 
-  #       env:
-  #       - name: MYSQL_ROOT_PASSWORD
-  #         value: api
-  #       - name: MYSQL_DATABASE
-  #         value: apiDB
-  #       - name: MYSQL_USER
-  #         value: api
-  #       - name: MYSQL_PASSWORD
-  #         value: api
-  #       volumeMounts:
-  #       - name: mysql-data
-  #         mountPath: /var/lib/mysql
-  # volumes:
-  # - name: mysql-data
-  #   hostPath:
-  #     path: /path/on/host/.mysql-data/db
-  #     type: DirectoryOrCreate
+deployment:
+  image:  
+    tag: 1
+  replicas: 1
+
+  labels:
+    environment: dev
+    app: exercise-mariadb-service-dev
