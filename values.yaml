@@ -4,7 +4,7 @@ service: mariadb
 
 deployment:
   image:
-    repository: tferrari92/mariadb
+    repository: tferrari92/mariadb-service
     
   labels:
     system: exercise
