@@ -7,4 +7,4 @@ deployment:
 
   labels:
     environment: dev
-    app: exercise-mariadb-service-dev
+    app: exercise-mariadb-dev
