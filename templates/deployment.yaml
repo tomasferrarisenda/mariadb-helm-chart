@@ -24,7 +24,7 @@ spec:
         - name: {{ .Values.system }}-{{ .Values.service }}-{{ .Values.environment }}
           image: {{ .Values.deployment.image.repository }}:{{ .Values.deployment.image.tag }}
           ports:
-            - containerPort: 8080
+            - containerPort: 3306
           env:
           - name: MYSQL_ROOT_PASSWORD
             value: api
@@ -34,4 +34,3 @@ spec:
             value: api
           - name: MYSQL_PASSWORD
             value: api
-        
