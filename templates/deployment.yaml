@@ -26,6 +26,12 @@ spec:
           ports:
             - containerPort: 8080
           env:
-          - name: DB
-            value: crm_db
-
+          - name: MYSQL_ROOT_PASSWORD
+            value: api
+          - name: MYSQL_DATABASE
+            value: apiDB
+          - name: MYSQL_USER
+            value: api
+          - name: MYSQL_PASSWORD
+            value: api
+        
