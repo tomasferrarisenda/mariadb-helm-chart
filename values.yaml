@@ -1,12 +1,12 @@
 system: exercise
 
-service: mariadb-service
+service: mariadb
 
 deployment:
   image:
-    repository: tferrari92/mariadb-service
+    repository: tferrari92/mariadb
     
   labels:
     system: exercise
-    service: mariadb-service
+    service: mariadb
     # backstage.io/kubernetes-id: mariadb
