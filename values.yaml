@@ -2,6 +2,8 @@ system: exercise
 
 service: mariadb
 
+port: 3306
+
 deployment:
   image:
     repository: tferrari92/mariadb-service

@@ -2,9 +2,9 @@ environment: stage
 
 deployment:
   image:  
-    tag: 1
+    tag: 0
   replicas: 1
 
   labels:
     environment: stage
-    app: exercise-api-gradle-service-stage
+    app: exercise-api-gradle-stage
